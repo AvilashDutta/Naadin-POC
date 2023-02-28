@@ -1,0 +1,18 @@
+logging:
+    level:
+        org:
+            atmosphere: warn
+server:
+    port: ${PORT:8080}
+spring:
+    jpa:
+        defer-datasource-initialization: true
+    mustache:
+        check-template-location: false
+vaadin:
+    launch-browser: true
+    whitelisted-packages: com.vaadin,org.vaadin,dev.hilla,com.example.application
+
+http:
+    header:
+        auth: Authorization
